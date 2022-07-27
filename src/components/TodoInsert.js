@@ -2,5 +2,14 @@ import {MdAdd} from 'react-icons/md'
 import './scss/TodoInsert.scss';
 
 const TodoInsert = () =>{
-    
+    return(
+        <form className='TodoInsert'>
+            <input placeholder='할 일을 입력하세요' />
+            <button type='submit' onClick={(e)=>{e.preventDefault()}}>
+                <MdAdd />
+            </button>
+        </form>
+    )
 }
+
+export default TodoInsert;
